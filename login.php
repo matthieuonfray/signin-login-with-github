@@ -1,7 +1,4 @@
 <?php
-//doc online : 
-//https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps
-
 //get request , either code from github, or login request
 if ($_SERVER['REQUEST_METHOD'] == 'GET')
 {
@@ -29,9 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
 		curl_close($ch);
 		$user_data = json_decode($response , true);
 		
-    //HERE we are : lets make some process in our site/database (session, cookie, redirect)
+    		//HERE we are : lets make some process in our site/database (session, cookie, redirect)
 		//fr : faire ici le traitements d'enregistrement ou redirection (session, cookie, redirect)
-		signup
 		exit();
 	}
 	else
